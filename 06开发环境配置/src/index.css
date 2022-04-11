@@ -1,0 +1,13 @@
+#title{
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-image: url('./images/1.png');
+    background-size: 100% 100%;
+}
+body html{
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: red;
+}

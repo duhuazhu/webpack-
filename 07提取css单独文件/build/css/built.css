@@ -1,0 +1,33 @@
+/*!**************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!./src/font/iconfont.css ***!
+  \**************************************************************************/
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url(../font/iconfont.cf5188.ttf) format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-a-01nvxingjiaose:before {
+  content: "\ee7e";
+}
+
+.icon-a-02nanxingjiaose:before {
+  content: "\ee7f";
+}
+
+.icon-a-03nanxingjiaose:before {
+  content: "\ee80";
+}
+
+.icon-a-04nvxingjiaose:before {
+  content: "\ee81";
+}
+
+
