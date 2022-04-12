@@ -9,6 +9,7 @@ module.exports ={
     },
     module: {
         rules: [
+
  /*           {
                 test:/\.js$/,
                 // 需要下载插件eslint-loader  eslint
