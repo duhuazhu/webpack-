@@ -5,9 +5,9 @@ const optimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plug
 const ESLintPlugin = require('eslint-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: ['./src/index.js', './src/index.html'],
   output: {
-    filename: 'js/built',
+    filename: 'js/built.js',
     path: resolve(__dirname, 'build'),
   },
   module: {
@@ -98,9 +98,11 @@ module.exports = {
   ],
   mode: 'development',
   devServer: {
-    contentBase: resolve(__dirname, 'build'),
+    static: resolve(__dirname, 'build'),
     compress: true,
     port: 3000,
     open: true,
+    // 热更新
+    hot: true,
   },
 };
