@@ -9,6 +9,8 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 
 //tree_shaking  去掉没有用的代码
 //1.必须只用es6环境 2.开启production
+
+//"sideEffects": ["*.css"]  代码没有副作用 排除css
 module.exports = {
   entry: ['./src/index.js', './src/index.html'],
   output: {

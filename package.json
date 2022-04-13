@@ -44,5 +44,6 @@
   },
   "dependencies": {
     "@babel/core": "^7.17.9"
-  }
+  },
+  "sideEffects": ["*.css"]
 }
