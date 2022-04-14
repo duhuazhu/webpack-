@@ -7,7 +7,6 @@ console.log(1111);
   });
 } */
 
-
 /*  懒加载  需要使用文件的时候再加载
 document.getElementById('btn-wrap').onclick = function () {
     console.log('====  点击按钮')
@@ -21,7 +20,7 @@ document.getElementById('btn-wrap').onclick = function () {
         })
 }
 */
-//预加载  在使用文件之前加载  等其他资源加载完毕再加载1314670-=8
+// 预加载  在使用文件之前加载  等其他资源加载完毕再加载1314670-=8
 /*
 import(/!*webpackChunkName:'test' ,webpackPrefetch:true*!/"./test")
     .then(({test}) => {

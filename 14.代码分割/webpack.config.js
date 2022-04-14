@@ -108,7 +108,7 @@ module.exports = {
   // 1.分析有没有公共文件 如果有单独打包成一个chunk
   optimization: {
     splitChunks: {
-      chunks: "all"
-    }
-  }
+      chunks: 'all',
+    },
+  },
 };
