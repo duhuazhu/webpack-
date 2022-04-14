@@ -28,7 +28,8 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1"
+    "webpack-dev-server": "^4.8.1",
+    "workbox-webpack-plugin": "^6.5.3"
   },
   "browserslist": {
     "development": [
@@ -45,5 +46,7 @@
   "dependencies": {
     "@babel/core": "^7.17.9"
   },
-  "sideEffects": ["*.css"]
+  "sideEffects": [
+    "*.css"
+  ]
 }

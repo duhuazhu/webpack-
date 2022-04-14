@@ -2,7 +2,10 @@ const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const miniCssExtractPlugin = require('mini-css-extract-plugin');
 const optimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
-const ESLintPlugin = require('eslint-webpack-plugin');
+// const ESLintPlugin = require('eslint-webpack-plugin');
+
+const WorkboxWebpackPlugin =  require('workbox-webpack-plugin');
+process.env.NODE_ENV = 'production'
 
 module.exports = {
   entry: ['./src/index.js', './src/index.html'],
@@ -89,12 +92,16 @@ module.exports = {
       },
     ),
     new optimizeCssAssetsWebpackPlugin(),
-    new ESLintPlugin(
+ /*   new ESLintPlugin(
       {
         fix: true, // 自动修复不合理的写法
         exclude: 'node_modules',
       },
-    ),
+    ),*/
+      new WorkboxWebpackPlugin.GenerateSW({
+        clientsClaim:true,
+        skipWaiting:true
+      })
   ],
   mode: 'development',
   devServer: {
@@ -105,10 +112,4 @@ module.exports = {
     // 热更新
     hot: true,
   },
-  // 1.分析有没有公共文件 如果有单独打包成一个chunk
-  optimization: {
-    splitChunks: {
-      chunks: "all"
-    }
-  }
 };
